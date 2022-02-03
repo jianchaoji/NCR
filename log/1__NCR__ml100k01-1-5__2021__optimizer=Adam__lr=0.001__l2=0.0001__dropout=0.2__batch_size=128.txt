@@ -1,0 +1,555 @@
+INFO:root:{'rank': 1, 'data_loader': 'DataLoader', 'model_name': 'NCR', 'runner': 'BaseRunner', 'data_processor': 'ProLogicRecDP', 'runner_name': 'ProLogicRunner'}
+INFO:root:{'gpu': '0', 'verbose': 20, 'log_file': '../log/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.txt', 'result_file': '../result/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.npy', 'random_seed': 2021, 'train': 1, 'path': '../dataset/', 'dataset': 'ml100k01-1-5', 'sep': '\t', 'label': 'label', 'u_vector_size': 64, 'i_vector_size': 64, 'r_weight': 0.1, 'ppl_weight': 0, 'pos_weight': 0, 'model_path': '../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt', 'load': 0, 'epoch': 100, 'check_epoch': 1, 'early_stop': 1, 'lr': 0.001, 'batch_size': 128, 'eval_batch_size': 16384, 'dropout': 0.2, 'l2': 0.0001, 'optimizer': 'Adam', 'metric': 'ndcg@5,ndcg@10,hit@5,hit@10', 'skip_eval': 0, 'max_his': 5, 'sup_his': 0, 'sparse_his': 1, 'test_neg_n': 100}
+INFO:root:DataLoader: DataLoader
+INFO:root:Model: NCR
+INFO:root:Runner: ProLogicRunner
+INFO:root:DataProcessor: ProLogicRecDP
+INFO:root:# cuda devices: 1
+INFO:root:load train csv...
+INFO:root:size of train: 94638
+INFO:root:load validation csv...
+INFO:root:size of validation: 2334
+INFO:root:load test csv...
+INFO:root:size of test: 3028
+INFO:root:load history csv...
+INFO:root:label: 0-1
+INFO:root:# of users: 944
+INFO:root:# of items: 1683
+INFO:root:# of user features: 0
+INFO:root:# of item features: 0
+INFO:root:# of context features: 0
+INFO:root:# of features: 0
+INFO:root:Model # of features 0
+INFO:root:Model # of feature dims 0
+INFO:root:# of params: 213696
+INFO:root:Drop Neg Samples...
+INFO:root:size of train: 53491
+INFO:root:size of validation: 942
+INFO:root:size of test: 942
+INFO:root:Prepare Test Data...
+INFO:root:Test Before Training = 0.0335,0.0511,0.0573,0.1125 ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Prepare Train Data...
+INFO:root:Prepare Validation Data...
+INFO:root:Init: 	 train= 0.8171,0.8171 validation= 0.0302,0.0412,0.0531,0.0881 test= 0.0329,0.0515,0.0563,0.1146 [3.5 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Optimizer: Adam
+INFO:root:
+
+INFO:root:loss = 40.3071, l2 = 0.0121
+WARNING:root:l2 inappropriate: loss = 40.3071, l2 = 0.0121
+INFO:root:Epoch     1 [20.0 s]	 train= 4.6383,4.4830 validation= 0.1773,0.2292,0.2771,0.4363 test= 0.1787,0.2278,0.2749,0.4268 [3.2 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 36.0134, l2 = 0.0201
+WARNING:root:l2 inappropriate: loss = 36.0134, l2 = 0.0201
+INFO:root:Epoch     2 [18.7 s]	 train= 5.8474,5.6820 validation= 0.1757,0.2285,0.2643,0.4268 test= 0.1780,0.2278,0.2718,0.4268 [3.5 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 38.7411, l2 = 0.0272
+WARNING:root:l2 inappropriate: loss = 38.7411, l2 = 0.0272
+INFO:root:Epoch     3 [18.8 s]	 train= 5.6859,5.6024 validation= 0.1902,0.2408,0.2930,0.4501 test= 0.1841,0.2342,0.2834,0.4384 [3.5 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 45.9452, l2 = 0.0349
+WARNING:root:l2 inappropriate: loss = 45.9452, l2 = 0.0349
+INFO:root:Epoch     4 [18.0 s]	 train= 6.1531,6.0638 validation= 0.1908,0.2395,0.2887,0.4384 test= 0.1916,0.2420,0.2877,0.4427 [3.5 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 33.3213, l2 = 0.0438
+WARNING:root:l2 inappropriate: loss = 33.3213, l2 = 0.0438
+INFO:root:Epoch     5 [18.8 s]	 train= 5.3866,5.0546 validation= 0.2152,0.2674,0.3312,0.4926 test= 0.2122,0.2641,0.3163,0.4788 [3.7 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 24.7547, l2 = 0.0538
+WARNING:root:l2 inappropriate: loss = 24.7547, l2 = 0.0538
+INFO:root:Epoch     6 [19.2 s]	 train= 4.7011,4.2675 validation= 0.2771,0.3308,0.4108,0.5764 test= 0.2489,0.3045,0.3662,0.5393 [3.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 28.7461, l2 = 0.0617
+WARNING:root:l2 inappropriate: loss = 28.7461, l2 = 0.0617
+INFO:root:Epoch     7 [20.5 s]	 train= 5.6258,5.4372 validation= 0.2686,0.3289,0.3970,0.5839 test= 0.2515,0.3090,0.3790,0.5584 [3.4 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 28.7422, l2 = 0.0698
+WARNING:root:l2 inappropriate: loss = 28.7422, l2 = 0.0698
+INFO:root:Epoch     8 [18.7 s]	 train= 6.0877,5.8738 validation= 0.2690,0.3312,0.4108,0.6040 test= 0.2533,0.3104,0.3864,0.5648 [3.6 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 16.7374, l2 = 0.0777
+WARNING:root:l2 inappropriate: loss = 16.7374, l2 = 0.0777
+INFO:root:Epoch     9 [18.9 s]	 train= 5.4793,5.1871 validation= 0.2839,0.3432,0.4214,0.6072 test= 0.2690,0.3269,0.4023,0.5796 [3.4 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 16.7680, l2 = 0.0853
+INFO:root:Epoch    10 [18.2 s]	 train= 5.2700,4.9861 validation= 0.2919,0.3528,0.4310,0.6189 test= 0.2630,0.3259,0.3896,0.5839 [4.0 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 23.2805, l2 = 0.0926
+WARNING:root:l2 inappropriate: loss = 23.2805, l2 = 0.0926
+INFO:root:Epoch    11 [19.0 s]	 train= 5.7157,5.5301 validation= 0.3026,0.3602,0.4565,0.6359 test= 0.2628,0.3288,0.3928,0.5966 [3.5 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 20.1799, l2 = 0.0997
+WARNING:root:l2 inappropriate: loss = 20.1799, l2 = 0.0997
+INFO:root:Epoch    12 [19.3 s]	 train= 5.4498,5.2700 validation= 0.3065,0.3723,0.4512,0.6539 test= 0.2868,0.3477,0.4257,0.6146 [3.2 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 16.2219, l2 = 0.1066
+INFO:root:Epoch    13 [18.6 s]	 train= 5.4293,5.1807 validation= 0.3233,0.3797,0.4766,0.6507 test= 0.2922,0.3475,0.4363,0.6093 [3.2 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 19.3536, l2 = 0.1131
+INFO:root:Epoch    14 [19.4 s]	 train= 5.1321,4.8467 validation= 0.3291,0.3863,0.4851,0.6635 test= 0.2941,0.3545,0.4427,0.6306 [3.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 16.8801, l2 = 0.1197
+INFO:root:Epoch    15 [17.9 s]	 train= 5.4053,5.1699 validation= 0.3329,0.3892,0.4830,0.6571 test= 0.2928,0.3516,0.4448,0.6263 [3.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 2.8845, l2 = 0.1258
+INFO:root:Epoch    16 [18.9 s]	 train= 5.0057,4.6848 validation= 0.3247,0.3879,0.4766,0.6709 test= 0.3062,0.3582,0.4639,0.6263 [3.5 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 11.0116, l2 = 0.1323
+INFO:root:Epoch    17 [19.2 s]	 train= 4.6090,4.1501 validation= 0.3436,0.4016,0.5053,0.6837 test= 0.3147,0.3744,0.4628,0.6476 [3.2 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 16.6946, l2 = 0.1391
+INFO:root:Epoch    18 [19.2 s]	 train= 5.0085,4.7075 validation= 0.3283,0.3865,0.4788,0.6582 test= 0.3207,0.3780,0.4671,0.6433 [3.2 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 14.0030, l2 = 0.1460
+INFO:root:Epoch    19 [19.9 s]	 train= 5.3103,5.0261 validation= 0.3653,0.4127,0.5350,0.6815 test= 0.3455,0.3970,0.5085,0.6699 [3.5 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 20.2989, l2 = 0.1522
+INFO:root:Epoch    20 [19.4 s]	 train= 5.4185,5.1573 validation= 0.3488,0.4071,0.5053,0.6858 test= 0.3250,0.3835,0.4820,0.6624 [3.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 13.0789, l2 = 0.1584
+INFO:root:Epoch    21 [19.5 s]	 train= 4.7731,4.3673 validation= 0.3497,0.4056,0.5138,0.6858 test= 0.3290,0.3899,0.4703,0.6571 [3.4 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 16.3867, l2 = 0.1648
+INFO:root:Epoch    22 [19.2 s]	 train= 5.3846,5.0945 validation= 0.3484,0.4090,0.4958,0.6826 test= 0.3151,0.3787,0.4437,0.6412 [3.6 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 14.3856, l2 = 0.1711
+INFO:root:Epoch    23 [18.6 s]	 train= 4.6745,4.2576 validation= 0.3600,0.4180,0.5212,0.6996 test= 0.3405,0.3997,0.4947,0.6794 [3.4 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 13.6409, l2 = 0.1773
+INFO:root:Epoch    24 [18.0 s]	 train= 5.6758,5.4366 validation= 0.3570,0.4156,0.5138,0.6953 test= 0.3221,0.3825,0.4682,0.6529 [3.2 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 14.8873, l2 = 0.1835
+INFO:root:Epoch    25 [18.8 s]	 train= 4.8081,4.3686 validation= 0.3738,0.4284,0.5329,0.7017 test= 0.3359,0.3967,0.4809,0.6699 [3.2 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 20.8058, l2 = 0.1893
+INFO:root:Epoch    26 [18.8 s]	 train= 5.6721,5.3748 validation= 0.3563,0.4183,0.5159,0.7070 test= 0.3243,0.3836,0.4777,0.6592 [3.6 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 8.5410, l2 = 0.1944
+INFO:root:Epoch    27 [18.7 s]	 train= 5.0728,4.7571 validation= 0.3574,0.4218,0.5042,0.7017 test= 0.3403,0.3956,0.4968,0.6677 [3.5 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 19.5207, l2 = 0.2005
+INFO:root:Epoch    28 [19.6 s]	 train= 5.0220,4.6634 validation= 0.3647,0.4255,0.5212,0.7081 test= 0.3417,0.3982,0.4947,0.6709 [3.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 12.1166, l2 = 0.2064
+INFO:root:Epoch    29 [18.7 s]	 train= 5.5890,5.4009 validation= 0.3614,0.4191,0.5202,0.6975 test= 0.3436,0.4035,0.4883,0.6720 [3.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 18.8478, l2 = 0.2124
+INFO:root:Epoch    30 [19.4 s]	 train= 4.6135,4.2417 validation= 0.3663,0.4271,0.5255,0.7134 test= 0.3515,0.4032,0.5170,0.6783 [3.2 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 10.8427, l2 = 0.2180
+INFO:root:Epoch    31 [18.5 s]	 train= 4.8039,4.4557 validation= 0.3659,0.4263,0.5361,0.7251 test= 0.3493,0.4057,0.4926,0.6677 [3.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 8.3999, l2 = 0.2243
+INFO:root:Epoch    32 [19.1 s]	 train= 5.1391,4.8659 validation= 0.3712,0.4331,0.5414,0.7325 test= 0.3579,0.4180,0.4979,0.6837 [3.2 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 9.8629, l2 = 0.2294
+INFO:root:Epoch    33 [19.1 s]	 train= 5.4305,5.1884 validation= 0.3552,0.4186,0.5159,0.7113 test= 0.3372,0.4010,0.4724,0.6688 [3.2 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 12.4957, l2 = 0.2357
+INFO:root:Epoch    34 [18.8 s]	 train= 5.6962,5.4598 validation= 0.3780,0.4376,0.5478,0.7314 test= 0.3466,0.4108,0.4862,0.6837 [3.8 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 18.4728, l2 = 0.2413
+INFO:root:Epoch    35 [18.6 s]	 train= 5.3554,5.0318 validation= 0.3702,0.4304,0.5340,0.7197 test= 0.3387,0.3977,0.4926,0.6741 [3.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 8.5285, l2 = 0.2464
+INFO:root:Epoch    36 [19.2 s]	 train= 5.5776,5.3033 validation= 0.3791,0.4421,0.5340,0.7282 test= 0.3528,0.4111,0.5053,0.6858 [3.1 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 16.0021, l2 = 0.2526
+INFO:root:Epoch    37 [19.5 s]	 train= 5.7916,5.5903 validation= 0.3751,0.4315,0.5425,0.7166 test= 0.3526,0.4128,0.5191,0.7049 [3.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 10.5629, l2 = 0.2586
+INFO:root:Epoch    38 [18.1 s]	 train= 5.5770,5.3069 validation= 0.3987,0.4520,0.5754,0.7410 test= 0.3534,0.4055,0.5223,0.6826 [3.4 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 15.3844, l2 = 0.2637
+INFO:root:Epoch    39 [19.2 s]	 train= 6.2151,5.9928 validation= 0.3917,0.4466,0.5658,0.7335 test= 0.3545,0.4112,0.5138,0.6890 [3.0 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 14.6880, l2 = 0.2691
+INFO:root:Epoch    40 [19.0 s]	 train= 5.8532,5.6405 validation= 0.3897,0.4438,0.5626,0.7314 test= 0.3536,0.4114,0.5074,0.6858 [3.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 10.5365, l2 = 0.2741
+INFO:root:Epoch    41 [19.3 s]	 train= 5.6297,5.3793 validation= 0.3730,0.4339,0.5329,0.7197 test= 0.3438,0.4007,0.5032,0.6805 [3.6 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 12.4745, l2 = 0.2793
+INFO:root:Epoch    42 [19.3 s]	 train= 5.5837,5.2700 validation= 0.3699,0.4285,0.5255,0.7070 test= 0.3460,0.4062,0.4989,0.6847 [3.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Early stop at 42 based on validation result.
+INFO:root:Best Iter(validation)=    38	 train= 5.5770,5.3069 valid= 0.3987,0.4520,0.5754,0.7410 test= 0.3534,0.4055,0.5223,0.6826 [942.9 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Best Iter(test)=    32	 train= 5.1391,4.8659 valid= 0.3712,0.4331,0.5414,0.7325 test= 0.3579,0.4180,0.4979,0.6837 [942.9 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Load model from ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:Test After Training = 0.3530,0.4093,0.5074,0.6805 ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save Test Results to ../result/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.npy
+INFO:root:{'rank': 1, 'data_loader': 'DataLoader', 'model_name': 'NCR', 'runner': 'BaseRunner', 'data_processor': 'ProLogicRecDP', 'runner_name': 'ProLogicRunner'}
+INFO:root:{'gpu': '0', 'verbose': 20, 'log_file': '../log/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.txt', 'result_file': '../result/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.npy', 'random_seed': 2021, 'train': 1, 'path': '../dataset/', 'dataset': 'ml100k01-1-5', 'sep': '\t', 'label': 'label', 'u_vector_size': 64, 'i_vector_size': 64, 'r_weight': 0.1, 'ppl_weight': 0, 'pos_weight': 0, 'model_path': '../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt', 'load': 0, 'epoch': 100, 'check_epoch': 1, 'early_stop': 1, 'lr': 0.001, 'batch_size': 128, 'eval_batch_size': 16384, 'dropout': 0.2, 'l2': 0.0001, 'optimizer': 'Adam', 'metric': 'ndcg@5,ndcg@10,hit@5,hit@10', 'skip_eval': 0, 'max_his': 5, 'sup_his': 0, 'sparse_his': 1, 'test_neg_n': 100}
+INFO:root:DataLoader: DataLoader
+INFO:root:Model: NCR
+INFO:root:Runner: ProLogicRunner
+INFO:root:DataProcessor: ProLogicRecDP
+INFO:root:# cuda devices: 1
+INFO:root:load train csv...
+INFO:root:size of train: 94638
+INFO:root:load validation csv...
+INFO:root:size of validation: 2334
+INFO:root:load test csv...
+INFO:root:size of test: 3028
+INFO:root:load history csv...
+INFO:root:label: 0-1
+INFO:root:# of users: 944
+INFO:root:# of items: 1683
+INFO:root:# of user features: 0
+INFO:root:# of item features: 0
+INFO:root:# of context features: 0
+INFO:root:# of features: 0
+INFO:root:Model # of features 0
+INFO:root:Model # of feature dims 0
+INFO:root:# of params: 213696
+INFO:root:Drop Neg Samples...
+INFO:root:size of train: 53491
+INFO:root:size of validation: 942
+INFO:root:size of test: 942
+INFO:root:Prepare Test Data...
+INFO:root:Test Before Training = 0.0335,0.0511,0.0573,0.1125 ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Prepare Train Data...
+INFO:root:Prepare Validation Data...
+INFO:root:Init: 	 train= 0.8171,0.8171 validation= 0.0302,0.0412,0.0531,0.0881 test= 0.0329,0.0515,0.0563,0.1146 [3.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Optimizer: Adam
+INFO:root:
+
+INFO:root:loss = 40.3071, l2 = 0.0121
+WARNING:root:l2 inappropriate: loss = 40.3071, l2 = 0.0121
+INFO:root:Epoch     1 [21.8 s]	 train= 4.6383,4.4830 validation= 0.1773,0.2292,0.2771,0.4363 test= 0.1787,0.2278,0.2749,0.4268 [3.1 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 36.0134, l2 = 0.0201
+WARNING:root:l2 inappropriate: loss = 36.0134, l2 = 0.0201
+INFO:root:Epoch     2 [20.5 s]	 train= 5.8474,5.6820 validation= 0.1757,0.2285,0.2643,0.4268 test= 0.1780,0.2278,0.2718,0.4268 [3.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 38.7411, l2 = 0.0272
+WARNING:root:l2 inappropriate: loss = 38.7411, l2 = 0.0272
+INFO:root:Epoch     3 [20.3 s]	 train= 5.6859,5.6024 validation= 0.1902,0.2408,0.2930,0.4501 test= 0.1841,0.2342,0.2834,0.4384 [2.9 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:Early stop manually
+INFO:root:{'rank': 1, 'data_loader': 'DataLoader', 'model_name': 'NCR', 'runner': 'BaseRunner', 'data_processor': 'ProLogicRecDP', 'runner_name': 'ProLogicRunner'}
+INFO:root:{'gpu': '0', 'verbose': 20, 'log_file': '../log/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.txt', 'result_file': '../result/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.npy', 'random_seed': 2021, 'train': 1, 'path': '../dataset/', 'dataset': 'ml100k01-1-5', 'sep': '\t', 'label': 'label', 'u_vector_size': 64, 'i_vector_size': 64, 'r_weight': 0.1, 'ppl_weight': 0, 'pos_weight': 0, 'model_path': '../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt', 'load': 0, 'epoch': 100, 'check_epoch': 1, 'early_stop': 1, 'lr': 0.001, 'batch_size': 128, 'eval_batch_size': 16384, 'dropout': 0.2, 'l2': 0.0001, 'optimizer': 'Adam', 'metric': 'ndcg@5,ndcg@10,hit@5,hit@10', 'skip_eval': 0, 'max_his': 5, 'sup_his': 0, 'sparse_his': 1, 'test_neg_n': 100}
+INFO:root:DataLoader: DataLoader
+INFO:root:Model: NCR
+INFO:root:Runner: ProLogicRunner
+INFO:root:DataProcessor: ProLogicRecDP
+INFO:root:# cuda devices: 1
+INFO:root:load train csv...
+INFO:root:size of train: 94638
+INFO:root:load validation csv...
+INFO:root:size of validation: 2334
+INFO:root:load test csv...
+INFO:root:size of test: 3028
+INFO:root:load history csv...
+INFO:root:label: 0-1
+INFO:root:# of users: 944
+INFO:root:# of items: 1683
+INFO:root:# of user features: 0
+INFO:root:# of item features: 0
+INFO:root:# of context features: 0
+INFO:root:# of features: 0
+INFO:root:Model # of features 0
+INFO:root:Model # of feature dims 0
+INFO:root:# of params: 213696
+INFO:root:Drop Neg Samples...
+INFO:root:size of train: 53491
+INFO:root:size of validation: 942
+INFO:root:size of test: 942
+INFO:root:Prepare Test Data...
+INFO:root:Test Before Training = 0.0335,0.0511,0.0573,0.1125 ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Prepare Train Data...
+INFO:root:{'rank': 1, 'data_loader': 'DataLoader', 'model_name': 'NCR', 'runner': 'BaseRunner', 'data_processor': 'ProLogicRecDP', 'runner_name': 'ProLogicRunner'}
+INFO:root:{'gpu': '0', 'verbose': 20, 'log_file': '../log/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.txt', 'result_file': '../result/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.npy', 'random_seed': 2021, 'train': 1, 'path': '../dataset/', 'dataset': 'ml100k01-1-5', 'sep': '\t', 'label': 'label', 'u_vector_size': 64, 'i_vector_size': 64, 'r_weight': 0.1, 'ppl_weight': 0, 'pos_weight': 0, 'model_path': '../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt', 'load': 0, 'epoch': 100, 'check_epoch': 1, 'early_stop': 1, 'lr': 0.001, 'batch_size': 128, 'eval_batch_size': 16384, 'dropout': 0.2, 'l2': 0.0001, 'optimizer': 'Adam', 'metric': 'ndcg@5,ndcg@10,hit@5,hit@10', 'skip_eval': 0, 'max_his': 5, 'sup_his': 0, 'sparse_his': 1, 'test_neg_n': 100}
+INFO:root:DataLoader: DataLoader
+INFO:root:Model: NCR
+INFO:root:Runner: ProLogicRunner
+INFO:root:DataProcessor: ProLogicRecDP
+INFO:root:# cuda devices: 1
+INFO:root:load train csv...
+INFO:root:size of train: 94638
+INFO:root:load validation csv...
+INFO:root:size of validation: 2334
+INFO:root:load test csv...
+INFO:root:size of test: 3028
+INFO:root:load history csv...
+INFO:root:label: 0-1
+INFO:root:# of users: 944
+INFO:root:# of items: 1683
+INFO:root:# of user features: 0
+INFO:root:# of item features: 0
+INFO:root:# of context features: 0
+INFO:root:# of features: 0
+INFO:root:Model # of features 0
+INFO:root:Model # of feature dims 0
+INFO:root:# of params: 213696
+INFO:root:Drop Neg Samples...
+INFO:root:size of train: 53491
+INFO:root:size of validation: 942
+INFO:root:size of test: 942
+INFO:root:Prepare Test Data...
+INFO:root:{'rank': 1, 'data_loader': 'DataLoader', 'model_name': 'NCR', 'runner': 'BaseRunner', 'data_processor': 'ProLogicRecDP', 'runner_name': 'ProLogicRunner'}
+INFO:root:{'gpu': '0', 'verbose': 20, 'log_file': '../log/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.txt', 'result_file': '../result/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.npy', 'random_seed': 2021, 'train': 1, 'path': '../dataset/', 'dataset': 'ml100k01-1-5', 'sep': '\t', 'label': 'label', 'u_vector_size': 64, 'i_vector_size': 64, 'r_weight': 0.1, 'ppl_weight': 0, 'pos_weight': 0, 'model_path': '../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt', 'load': 0, 'epoch': 100, 'check_epoch': 1, 'early_stop': 1, 'lr': 0.001, 'batch_size': 128, 'eval_batch_size': 16384, 'dropout': 0.2, 'l2': 0.0001, 'optimizer': 'Adam', 'metric': 'ndcg@5,ndcg@10,hit@5,hit@10', 'skip_eval': 0, 'max_his': 5, 'sup_his': 0, 'sparse_his': 1, 'test_neg_n': 100}
+INFO:root:DataLoader: DataLoader
+INFO:root:Model: NCR
+INFO:root:Runner: ProLogicRunner
+INFO:root:DataProcessor: ProLogicRecDP
+INFO:root:# cuda devices: 1
+INFO:root:load train csv...
+INFO:root:size of train: 94638
+INFO:root:load validation csv...
+INFO:root:size of validation: 2334
+INFO:root:load test csv...
+INFO:root:size of test: 3028
+INFO:root:load history csv...
+INFO:root:label: 0-1
+INFO:root:# of users: 944
+INFO:root:# of items: 1683
+INFO:root:# of user features: 0
+INFO:root:# of item features: 0
+INFO:root:# of context features: 0
+INFO:root:# of features: 0
+INFO:root:Model # of features 0
+INFO:root:Model # of feature dims 0
+INFO:root:# of params: 213696
+INFO:root:Drop Neg Samples...
+INFO:root:size of train: 53491
+INFO:root:size of validation: 942
+INFO:root:size of test: 942
+INFO:root:Prepare Test Data...
+INFO:root:Test Before Training = 0.0335,0.0511,0.0573,0.1125 ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Prepare Train Data...
+INFO:root:Prepare Validation Data...
+INFO:root:Init: 	 train= 0.8171,0.8171 validation= 0.0302,0.0412,0.0531,0.0881 test= 0.0329,0.0515,0.0563,0.1146 [3.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Optimizer: Adam
+INFO:root:{'rank': 1, 'data_loader': 'DataLoader', 'model_name': 'NCR', 'runner': 'BaseRunner', 'data_processor': 'ProLogicRecDP', 'runner_name': 'ProLogicRunner'}
+INFO:root:{'gpu': '0', 'verbose': 20, 'log_file': '../log/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.txt', 'result_file': '../result/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.npy', 'random_seed': 2021, 'train': 1, 'path': '../dataset/', 'dataset': 'ml100k01-1-5', 'sep': '\t', 'label': 'label', 'u_vector_size': 64, 'i_vector_size': 64, 'r_weight': 0.1, 'ppl_weight': 0, 'pos_weight': 0, 'model_path': '../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt', 'load': 0, 'epoch': 100, 'check_epoch': 1, 'early_stop': 1, 'lr': 0.001, 'batch_size': 128, 'eval_batch_size': 16384, 'dropout': 0.2, 'l2': 0.0001, 'optimizer': 'Adam', 'metric': 'ndcg@5,ndcg@10,hit@5,hit@10', 'skip_eval': 0, 'max_his': 5, 'sup_his': 0, 'sparse_his': 1, 'test_neg_n': 100}
+INFO:root:DataLoader: DataLoader
+INFO:root:Model: NCR
+INFO:root:Runner: ProLogicRunner
+INFO:root:DataProcessor: ProLogicRecDP
+INFO:root:# cuda devices: 1
+INFO:root:load train csv...
+INFO:root:size of train: 94638
+INFO:root:load validation csv...
+INFO:root:size of validation: 2334
+INFO:root:load test csv...
+INFO:root:size of test: 3028
+INFO:root:load history csv...
+INFO:root:label: 0-1
+INFO:root:# of users: 944
+INFO:root:# of items: 1683
+INFO:root:# of user features: 0
+INFO:root:# of item features: 0
+INFO:root:# of context features: 0
+INFO:root:# of features: 0
+INFO:root:Model # of features 0
+INFO:root:Model # of feature dims 0
+INFO:root:# of params: 213696
+INFO:root:Drop Neg Samples...
+INFO:root:size of train: 53491
+INFO:root:size of validation: 942
+INFO:root:size of test: 942
+INFO:root:Prepare Test Data...
+INFO:root:Test Before Training = 0.0335,0.0511,0.0573,0.1125 ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Prepare Train Data...
+INFO:root:Prepare Validation Data...
+INFO:root:Init: 	 train= 0.8171,0.8171 validation= 0.0302,0.0412,0.0531,0.0881 test= 0.0329,0.0515,0.0563,0.1146 [3.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Optimizer: Adam
+INFO:root:{'rank': 1, 'data_loader': 'DataLoader', 'model_name': 'NCR', 'runner': 'BaseRunner', 'data_processor': 'ProLogicRecDP', 'runner_name': 'ProLogicRunner'}
+INFO:root:{'gpu': '0', 'verbose': 20, 'log_file': '../log/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.txt', 'result_file': '../result/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.npy', 'random_seed': 2021, 'train': 1, 'path': '../dataset/', 'dataset': 'ml100k01-1-5', 'sep': '\t', 'label': 'label', 'u_vector_size': 64, 'i_vector_size': 64, 'r_weight': 0.1, 'ppl_weight': 0, 'pos_weight': 0, 'model_path': '../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt', 'load': 0, 'epoch': 100, 'check_epoch': 1, 'early_stop': 1, 'lr': 0.001, 'batch_size': 128, 'eval_batch_size': 16384, 'dropout': 0.2, 'l2': 0.0001, 'optimizer': 'Adam', 'metric': 'ndcg@5,ndcg@10,hit@5,hit@10', 'skip_eval': 0, 'max_his': 5, 'sup_his': 0, 'sparse_his': 1, 'test_neg_n': 100}
+INFO:root:DataLoader: DataLoader
+INFO:root:Model: NCR
+INFO:root:Runner: ProLogicRunner
+INFO:root:DataProcessor: ProLogicRecDP
+INFO:root:# cuda devices: 1
+INFO:root:load train csv...
+INFO:root:size of train: 94638
+INFO:root:load validation csv...
+INFO:root:size of validation: 2334
+INFO:root:load test csv...
+INFO:root:size of test: 3028
+INFO:root:load history csv...
+INFO:root:label: 0-1
+INFO:root:# of users: 944
+INFO:root:# of items: 1683
+INFO:root:# of user features: 0
+INFO:root:# of item features: 0
+INFO:root:# of context features: 0
+INFO:root:# of features: 0
+INFO:root:Model # of features 0
+INFO:root:Model # of feature dims 0
+INFO:root:# of params: 213696
+INFO:root:Drop Neg Samples...
+INFO:root:size of train: 53491
+INFO:root:size of validation: 942
+INFO:root:size of test: 942
+INFO:root:Prepare Test Data...
+INFO:root:{'rank': 1, 'data_loader': 'DataLoader', 'model_name': 'NCR', 'runner': 'BaseRunner', 'data_processor': 'ProLogicRecDP', 'runner_name': 'ProLogicRunner'}
+INFO:root:{'gpu': '0', 'verbose': 20, 'log_file': '../log/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.txt', 'result_file': '../result/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.npy', 'random_seed': 2021, 'train': 1, 'path': '../dataset/', 'dataset': 'ml100k01-1-5', 'sep': '\t', 'label': 'label', 'u_vector_size': 64, 'i_vector_size': 64, 'r_weight': 0.1, 'ppl_weight': 0, 'pos_weight': 0, 'model_path': '../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt', 'load': 0, 'epoch': 100, 'check_epoch': 1, 'early_stop': 1, 'lr': 0.001, 'batch_size': 128, 'eval_batch_size': 16384, 'dropout': 0.2, 'l2': 0.0001, 'optimizer': 'Adam', 'metric': 'ndcg@5,ndcg@10,hit@5,hit@10', 'skip_eval': 0, 'max_his': 5, 'sup_his': 0, 'sparse_his': 1, 'test_neg_n': 100}
+INFO:root:DataLoader: DataLoader
+INFO:root:Model: NCR
+INFO:root:Runner: ProLogicRunner
+INFO:root:DataProcessor: ProLogicRecDP
+INFO:root:# cuda devices: 1
+INFO:root:load train csv...
+INFO:root:size of train: 94638
+INFO:root:load validation csv...
+INFO:root:size of validation: 2334
+INFO:root:load test csv...
+INFO:root:size of test: 3028
+INFO:root:load history csv...
+INFO:root:label: 0-1
+INFO:root:# of users: 944
+INFO:root:# of items: 1683
+INFO:root:# of user features: 0
+INFO:root:# of item features: 0
+INFO:root:# of context features: 0
+INFO:root:# of features: 0
+INFO:root:Model # of features 0
+INFO:root:Model # of feature dims 0
+INFO:root:# of params: 213696
+INFO:root:Drop Neg Samples...
+INFO:root:size of train: 53491
+INFO:root:size of validation: 942
+INFO:root:size of test: 942
+INFO:root:Prepare Test Data...
+INFO:root:{'rank': 1, 'data_loader': 'DataLoader', 'model_name': 'NCR', 'runner': 'BaseRunner', 'data_processor': 'ProLogicRecDP', 'runner_name': 'ProLogicRunner'}
+INFO:root:{'gpu': '0', 'verbose': 20, 'log_file': '../log/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.txt', 'result_file': '../result/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.npy', 'random_seed': 2021, 'train': 1, 'path': '../dataset/', 'dataset': 'ml100k01-1-5', 'sep': '\t', 'label': 'label', 'u_vector_size': 64, 'i_vector_size': 64, 'r_weight': 0.1, 'ppl_weight': 0, 'pos_weight': 0, 'model_path': '../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt', 'load': 0, 'epoch': 100, 'check_epoch': 1, 'early_stop': 1, 'lr': 0.001, 'batch_size': 128, 'eval_batch_size': 16384, 'dropout': 0.2, 'l2': 0.0001, 'optimizer': 'Adam', 'metric': 'ndcg@5,ndcg@10,hit@5,hit@10', 'skip_eval': 0, 'max_his': 5, 'sup_his': 0, 'sparse_his': 1, 'test_neg_n': 100}
+INFO:root:DataLoader: DataLoader
+INFO:root:Model: NCR
+INFO:root:Runner: ProLogicRunner
+INFO:root:DataProcessor: ProLogicRecDP
+INFO:root:# cuda devices: 1
+INFO:root:load train csv...
+INFO:root:size of train: 94638
+INFO:root:load validation csv...
+INFO:root:size of validation: 2334
+INFO:root:load test csv...
+INFO:root:size of test: 3028
+INFO:root:load history csv...
+INFO:root:label: 0-1
+INFO:root:# of users: 944
+INFO:root:# of items: 1683
+INFO:root:# of user features: 0
+INFO:root:# of item features: 0
+INFO:root:# of context features: 0
+INFO:root:# of features: 0
+INFO:root:Model # of features 0
+INFO:root:Model # of feature dims 0
+INFO:root:# of params: 213696
+INFO:root:Drop Neg Samples...
+INFO:root:size of train: 53491
+INFO:root:size of validation: 942
+INFO:root:size of test: 942
+INFO:root:Prepare Test Data...
+INFO:root:Test Before Training = 0.0335,0.0511,0.0573,0.1125 ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Prepare Train Data...
+INFO:root:Prepare Validation Data...
+INFO:root:Init: 	 train= 0.8171,0.8171 validation= 0.0302,0.0412,0.0531,0.0881 test= 0.0329,0.0515,0.0563,0.1146 [2.9 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Optimizer: Adam
+INFO:root:
+
+INFO:root:loss = 40.3071, l2 = 0.0121
+WARNING:root:l2 inappropriate: loss = 40.3071, l2 = 0.0121
+INFO:root:Epoch     1 [19.2 s]	 train= 4.6383,4.4830 validation= 0.1773,0.2292,0.2771,0.4363 test= 0.1787,0.2278,0.2749,0.4268 [2.9 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 36.0134, l2 = 0.0201
+WARNING:root:l2 inappropriate: loss = 36.0134, l2 = 0.0201
+INFO:root:Epoch     2 [18.9 s]	 train= 5.8474,5.6820 validation= 0.1757,0.2285,0.2643,0.4268 test= 0.1780,0.2278,0.2718,0.4268 [2.6 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 38.7411, l2 = 0.0272
+WARNING:root:l2 inappropriate: loss = 38.7411, l2 = 0.0272
+INFO:root:Epoch     3 [17.5 s]	 train= 5.6859,5.6024 validation= 0.1902,0.2408,0.2930,0.4501 test= 0.1841,0.2342,0.2834,0.4384 [2.6 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 45.9452, l2 = 0.0349
+WARNING:root:l2 inappropriate: loss = 45.9452, l2 = 0.0349
+INFO:root:Epoch     4 [17.7 s]	 train= 6.1531,6.0638 validation= 0.1908,0.2395,0.2887,0.4384 test= 0.1916,0.2420,0.2877,0.4427 [2.6 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 33.3213, l2 = 0.0438
+WARNING:root:l2 inappropriate: loss = 33.3213, l2 = 0.0438
+INFO:root:Epoch     5 [17.4 s]	 train= 5.3866,5.0546 validation= 0.2152,0.2674,0.3312,0.4926 test= 0.2122,0.2641,0.3163,0.4788 [2.6 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 24.7547, l2 = 0.0538
+WARNING:root:l2 inappropriate: loss = 24.7547, l2 = 0.0538
+INFO:root:Epoch     6 [17.5 s]	 train= 4.7011,4.2675 validation= 0.2771,0.3308,0.4108,0.5764 test= 0.2489,0.3045,0.3662,0.5393 [2.8 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__ml100k01-1-5__2021__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 28.7461, l2 = 0.0617
+WARNING:root:l2 inappropriate: loss = 28.7461, l2 = 0.0617
+INFO:root:Epoch     7 [17.8 s]	 train= 5.6258,5.4372 validation= 0.2686,0.3289,0.3970,0.5839 test= 0.2515,0.3090,0.3790,0.5584 [2.6 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 28.7422, l2 = 0.0698
+WARNING:root:l2 inappropriate: loss = 28.7422, l2 = 0.0698
+INFO:root:Epoch     8 [17.7 s]	 train= 6.0877,5.8738 validation= 0.2690,0.3312,0.4108,0.6040 test= 0.2533,0.3104,0.3864,0.5648 [2.8 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Early stop manually

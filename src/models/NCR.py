@@ -113,6 +113,9 @@ class NCR(BaseModel):
 
         # concatenate user embedding with history item embeddings
         his_vectors = torch.cat((uh_vectors, his_vectors), dim=2)
+        
+        #print(his_vectors.size())
+        #exit()
 
         # True/False representation of user item interactions
         his_vectors = self.purchase_gate(his_vectors)
@@ -124,7 +127,9 @@ class NCR(BaseModel):
         constraint.append(not_his_vectors)
 
         his_vectors = history_pos_tag * his_vectors + (1 - history_pos_tag) * not_his_vectors
-
+        #print(history_pos_tag)
+        #exit()
+  
         # constraint = [his_vectors]
         # False representation
         # false = self.logic_not(self.true)
@@ -280,6 +285,8 @@ class NCR(BaseModel):
         # recommendation loss
         if feed_dict['rank'] == 1:
             batch_size = int(feed_dict['Y'].shape[0] / 2)
+            #print(feed_dict['Y'])
+            #exit()
             # tf_matrix = self.true.view(1, -1).expand(batch_size, -1)
             pos, neg = out_dict['prediction'][:batch_size], out_dict['prediction'][batch_size:]
             # pos_loss = 10 - torch.mean(pos)

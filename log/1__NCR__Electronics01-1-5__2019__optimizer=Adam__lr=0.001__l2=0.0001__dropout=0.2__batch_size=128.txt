@@ -1,0 +1,434 @@
+INFO:root:{'rank': 1, 'data_loader': 'DataLoader', 'model_name': 'NCR', 'runner': 'BaseRunner', 'data_processor': 'ProLogicRecDP', 'runner_name': 'ProLogicRunner'}
+INFO:root:{'gpu': '0', 'verbose': 20, 'log_file': '../log/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.txt', 'result_file': '../result/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.npy', 'random_seed': 2019, 'train': 1, 'path': '../dataset/', 'dataset': 'Electronics01-1-5', 'sep': '\t', 'label': 'label', 'u_vector_size': 64, 'i_vector_size': 64, 'r_weight': 0.1, 'ppl_weight': 0, 'pos_weight': 0, 'model_path': '../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt', 'load': 0, 'epoch': 100, 'check_epoch': 1, 'early_stop': 1, 'lr': 0.001, 'batch_size': 128, 'eval_batch_size': 16384, 'dropout': 0.2, 'l2': 0.0001, 'optimizer': 'Adam', 'metric': 'ndcg@5,ndcg@10,hit@5,hit@10', 'skip_eval': 0, 'max_his': 5, 'sup_his': 0, 'sparse_his': 1, 'test_neg_n': 100}
+INFO:root:DataLoader: DataLoader
+INFO:root:Model: NCR
+INFO:root:Runner: ProLogicRunner
+INFO:root:DataProcessor: ProLogicRecDP
+INFO:root:# cuda devices: 1
+INFO:root:load train csv...
+INFO:root:size of train: 1238417
+INFO:root:load validation csv...
+INFO:root:size of validation: 214082
+INFO:root:load test csv...
+INFO:root:size of test: 236689
+INFO:root:building train history csv...
+INFO:root:building vt history csv...
+INFO:root:load history csv...
+INFO:root:label: 0-1
+INFO:root:# of users: 192404
+INFO:root:# of items: 63002
+INFO:root:# of user features: 0
+INFO:root:# of item features: 0
+INFO:root:# of context features: 0
+INFO:root:# of features: 0
+INFO:root:Model # of features 0
+INFO:root:Model # of feature dims 0
+INFO:root:# of params: 16391552
+INFO:root:Drop Neg Samples...
+INFO:root:size of train: 990402
+INFO:root:size of validation: 178057
+INFO:root:size of test: 187608
+INFO:root:Prepare Test Data...
+INFO:root:Test Before Training = 0.0303,0.0456,0.0510,0.0988 ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Prepare Train Data...
+INFO:root:Prepare Validation Data...
+INFO:root:Init: 	 train= 3.0729,3.0729 validation= 0.0307,0.0459,0.0516,0.0990 test= 0.0303,0.0456,0.0510,0.0989 [553.7 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Optimizer: Adam
+INFO:root:Early stop manually
+INFO:root:{'rank': 1, 'data_loader': 'DataLoader', 'model_name': 'NCR', 'runner': 'BaseRunner', 'data_processor': 'ProLogicRecDP', 'runner_name': 'ProLogicRunner'}
+INFO:root:{'gpu': '0', 'verbose': 20, 'log_file': '../log/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.txt', 'result_file': '../result/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.npy', 'random_seed': 2019, 'train': 1, 'path': '../dataset/', 'dataset': 'Electronics01-1-5', 'sep': '\t', 'label': 'label', 'u_vector_size': 64, 'i_vector_size': 64, 'r_weight': 0.1, 'ppl_weight': 0, 'pos_weight': 0, 'model_path': '../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt', 'load': 0, 'epoch': 100, 'check_epoch': 1, 'early_stop': 1, 'lr': 0.001, 'batch_size': 128, 'eval_batch_size': 16384, 'dropout': 0.2, 'l2': 0.0001, 'optimizer': 'Adam', 'metric': 'ndcg@5,ndcg@10,hit@5,hit@10', 'skip_eval': 0, 'max_his': 5, 'sup_his': 0, 'sparse_his': 1, 'test_neg_n': 100}
+INFO:root:DataLoader: DataLoader
+INFO:root:Model: NCR
+INFO:root:Runner: ProLogicRunner
+INFO:root:DataProcessor: ProLogicRecDP
+INFO:root:# cuda devices: 1
+INFO:root:load train csv...
+INFO:root:size of train: 1238417
+INFO:root:load validation csv...
+INFO:root:size of validation: 214082
+INFO:root:load test csv...
+INFO:root:size of test: 236689
+INFO:root:load history csv...
+INFO:root:label: 0-1
+INFO:root:# of users: 192404
+INFO:root:# of items: 63002
+INFO:root:# of user features: 0
+INFO:root:# of item features: 0
+INFO:root:# of context features: 0
+INFO:root:# of features: 0
+INFO:root:Model # of features 0
+INFO:root:Model # of feature dims 0
+INFO:root:# of params: 16391552
+INFO:root:Drop Neg Samples...
+INFO:root:size of train: 990402
+INFO:root:size of validation: 178057
+INFO:root:size of test: 187608
+INFO:root:Prepare Test Data...
+INFO:root:Test Before Training = 0.0303,0.0456,0.0510,0.0988 ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Prepare Train Data...
+INFO:root:Prepare Validation Data...
+INFO:root:Init: 	 train= 3.0729,3.0729 validation= 0.0307,0.0459,0.0516,0.0990 test= 0.0303,0.0456,0.0510,0.0989 [550.5 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Optimizer: Adam
+INFO:root:
+
+INFO:root:loss = 61.0270, l2 = 1.3081
+INFO:root:Epoch     1 [273.2 s]	 train= 6.2947,6.1301 validation= 0.3039,0.3428,0.4107,0.5311 test= 0.2780,0.3150,0.3777,0.4925 [510.4 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 51.4809, l2 = 2.0424
+INFO:root:Epoch     2 [273.4 s]	 train= 5.7620,5.5877 validation= 0.3080,0.3481,0.4175,0.5413 test= 0.2805,0.3185,0.3832,0.5009 [505.5 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 41.8680, l2 = 2.7730
+INFO:root:Epoch     3 [281.6 s]	 train= 6.0161,5.7985 validation= 0.3151,0.3545,0.4267,0.5488 test= 0.2853,0.3234,0.3887,0.5066 [502.4 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 44.9956, l2 = 3.5376
+INFO:root:Epoch     4 [271.1 s]	 train= 5.8704,5.6407 validation= 0.3163,0.3556,0.4276,0.5492 test= 0.2892,0.3269,0.3939,0.5105 [510.8 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 55.3101, l2 = 4.1560
+INFO:root:Epoch     5 [278.3 s]	 train= 6.1760,6.0546 validation= 0.3151,0.3538,0.4260,0.5458 test= 0.2865,0.3236,0.3906,0.5056 [525.0 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 44.1078, l2 = 4.6329
+WARNING:root:l2 inappropriate: loss = 44.1078, l2 = 4.6329
+INFO:root:Epoch     6 [280.9 s]	 train= 5.9241,5.7753 validation= 0.3219,0.3600,0.4342,0.5519 test= 0.2947,0.3319,0.4000,0.5151 [524.7 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 40.7589, l2 = 4.9428
+WARNING:root:l2 inappropriate: loss = 40.7589, l2 = 4.9428
+INFO:root:Epoch     7 [273.4 s]	 train= 6.1293,5.9639 validation= 0.3272,0.3659,0.4425,0.5624 test= 0.2997,0.3375,0.4093,0.5263 [521.6 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 45.7823, l2 = 5.0466
+WARNING:root:l2 inappropriate: loss = 45.7823, l2 = 5.0466
+INFO:root:Epoch     8 [275.2 s]	 train= 6.0027,5.8469 validation= 0.3326,0.3715,0.4467,0.5671 test= 0.3047,0.3428,0.4129,0.5307 [532.7 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 29.4184, l2 = 5.0605
+WARNING:root:l2 inappropriate: loss = 29.4184, l2 = 5.0605
+INFO:root:Epoch     9 [282.5 s]	 train= 5.4756,5.2397 validation= 0.3362,0.3745,0.4502,0.5686 test= 0.3106,0.3479,0.4182,0.5336 [530.2 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 33.6520, l2 = 5.0360
+WARNING:root:l2 inappropriate: loss = 33.6520, l2 = 5.0360
+INFO:root:Epoch    10 [278.6 s]	 train= 5.9347,5.7899 validation= 0.3368,0.3760,0.4502,0.5713 test= 0.3126,0.3508,0.4206,0.5388 [517.4 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 25.3522, l2 = 4.9643
+WARNING:root:l2 inappropriate: loss = 25.3522, l2 = 4.9643
+INFO:root:Epoch    11 [269.2 s]	 train= 5.7359,5.5512 validation= 0.3398,0.3782,0.4539,0.5728 test= 0.3159,0.3535,0.4244,0.5408 [546.9 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 33.7517, l2 = 4.9173
+WARNING:root:l2 inappropriate: loss = 33.7517, l2 = 4.9173
+INFO:root:Epoch    12 [271.4 s]	 train= 5.5208,5.3350 validation= 0.3436,0.3828,0.4598,0.5811 test= 0.3222,0.3603,0.4341,0.5520 [561.8 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 25.2754, l2 = 4.8414
+WARNING:root:l2 inappropriate: loss = 25.2754, l2 = 4.8414
+INFO:root:Epoch    13 [270.6 s]	 train= 5.3268,5.1239 validation= 0.3407,0.3799,0.4570,0.5782 test= 0.3152,0.3533,0.4266,0.5444 [513.4 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 31.9547, l2 = 4.7940
+WARNING:root:l2 inappropriate: loss = 31.9547, l2 = 4.7940
+INFO:root:Epoch    14 [268.3 s]	 train= 5.4657,5.2727 validation= 0.3429,0.3820,0.4594,0.5804 test= 0.3182,0.3564,0.4293,0.5474 [543.6 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 15.9362, l2 = 4.7272
+WARNING:root:l2 inappropriate: loss = 15.9362, l2 = 4.7272
+INFO:root:Epoch    15 [301.5 s]	 train= 5.0791,4.8537 validation= 0.3438,0.3829,0.4612,0.5821 test= 0.3208,0.3593,0.4330,0.5521 [717.0 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 21.8503, l2 = 4.6819
+WARNING:root:l2 inappropriate: loss = 21.8503, l2 = 4.6819
+INFO:root:Epoch    16 [294.2 s]	 train= 5.3944,5.2037 validation= 0.3360,0.3752,0.4495,0.5708 test= 0.3126,0.3507,0.4200,0.5381 [864.0 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 18.4122, l2 = 4.6083
+WARNING:root:l2 inappropriate: loss = 18.4122, l2 = 4.6083
+INFO:root:Epoch    17 [315.7 s]	 train= 5.3325,5.1109 validation= 0.3341,0.3735,0.4483,0.5702 test= 0.3073,0.3459,0.4157,0.5355 [847.5 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 33.5387, l2 = 4.5713
+WARNING:root:l2 inappropriate: loss = 33.5387, l2 = 4.5713
+INFO:root:Epoch    18 [312.2 s]	 train= 5.2950,5.1075 validation= 0.3399,0.3788,0.4546,0.5749 test= 0.3163,0.3543,0.4256,0.5433 [637.7 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 26.8308, l2 = 4.5185
+WARNING:root:l2 inappropriate: loss = 26.8308, l2 = 4.5185
+INFO:root:Epoch    19 [303.1 s]	 train= 5.4519,5.2555 validation= 0.3441,0.3830,0.4601,0.5804 test= 0.3226,0.3607,0.4330,0.5507 [624.4 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 18.2946, l2 = 4.4756
+WARNING:root:l2 inappropriate: loss = 18.2946, l2 = 4.4756
+INFO:root:Epoch    20 [317.2 s]	 train= 5.3367,5.1270 validation= 0.3411,0.3805,0.4566,0.5783 test= 0.3154,0.3541,0.4254,0.5453 [548.7 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 22.5632, l2 = 4.4400
+WARNING:root:l2 inappropriate: loss = 22.5632, l2 = 4.4400
+INFO:root:Epoch    21 [276.4 s]	 train= 5.5170,5.3320 validation= 0.3428,0.3815,0.4593,0.5790 test= 0.3170,0.3548,0.4269,0.5441 [541.6 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 29.9042, l2 = 4.3879
+WARNING:root:l2 inappropriate: loss = 29.9042, l2 = 4.3879
+INFO:root:Epoch    22 [310.6 s]	 train= 5.1892,4.9802 validation= 0.3479,0.3868,0.4655,0.5857 test= 0.3270,0.3650,0.4393,0.5570 [768.5 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 16.1204, l2 = 4.3518
+WARNING:root:l2 inappropriate: loss = 16.1204, l2 = 4.3518
+INFO:root:Epoch    23 [324.9 s]	 train= 5.0895,4.8531 validation= 0.3457,0.3850,0.4616,0.5831 test= 0.3250,0.3633,0.4367,0.5551 [833.7 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 20.1075, l2 = 4.3132
+WARNING:root:l2 inappropriate: loss = 20.1075, l2 = 4.3132
+INFO:root:Epoch    24 [302.3 s]	 train= 5.3471,5.1800 validation= 0.3462,0.3847,0.4621,0.5813 test= 0.3206,0.3586,0.4300,0.5475 [1011.7 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 25.5082, l2 = 4.2710
+WARNING:root:l2 inappropriate: loss = 25.5082, l2 = 4.2710
+INFO:root:Epoch    25 [316.3 s]	 train= 5.4149,5.2164 validation= 0.3424,0.3815,0.4575,0.5783 test= 0.3187,0.3576,0.4282,0.5484 [1141.2 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 23.7382, l2 = 4.2369
+WARNING:root:l2 inappropriate: loss = 23.7382, l2 = 4.2369
+INFO:root:Epoch    26 [290.9 s]	 train= 5.3297,5.0993 validation= 0.3469,0.3863,0.4642,0.5861 test= 0.3224,0.3613,0.4348,0.5552 [1113.4 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 20.3974, l2 = 4.2093
+WARNING:root:l2 inappropriate: loss = 20.3974, l2 = 4.2093
+INFO:root:Epoch    27 [300.7 s]	 train= 5.2186,5.0261 validation= 0.3484,0.3866,0.4632,0.5815 test= 0.3258,0.3630,0.4358,0.5512 [1184.5 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 19.6343, l2 = 4.1851
+WARNING:root:l2 inappropriate: loss = 19.6343, l2 = 4.1851
+INFO:root:Epoch    28 [298.0 s]	 train= 5.3858,5.1851 validation= 0.3405,0.3795,0.4551,0.5757 test= 0.3163,0.3549,0.4256,0.5450 [1005.6 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 29.9297, l2 = 4.1547
+WARNING:root:l2 inappropriate: loss = 29.9297, l2 = 4.1547
+INFO:root:Epoch    29 [293.4 s]	 train= 5.6393,5.4532 validation= 0.3419,0.3807,0.4578,0.5779 test= 0.3194,0.3576,0.4300,0.5484 [768.0 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 18.1031, l2 = 4.1314
+WARNING:root:l2 inappropriate: loss = 18.1031, l2 = 4.1314
+INFO:root:Epoch    30 [295.5 s]	 train= 5.4489,5.2460 validation= 0.3399,0.3787,0.4555,0.5754 test= 0.3137,0.3522,0.4225,0.5415 [711.6 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 19.2829, l2 = 4.1044
+WARNING:root:l2 inappropriate: loss = 19.2829, l2 = 4.1044
+INFO:root:Epoch    31 [296.9 s]	 train= 5.6103,5.4083 validation= 0.3379,0.3777,0.4534,0.5764 test= 0.3124,0.3511,0.4215,0.5414 [703.9 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 29.2944, l2 = 4.0992
+WARNING:root:l2 inappropriate: loss = 29.2944, l2 = 4.0992
+INFO:root:Epoch    32 [296.1 s]	 train= 5.6854,5.4891 validation= 0.3474,0.3863,0.4630,0.5833 test= 0.3295,0.3682,0.4410,0.5606 [645.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 20.8635, l2 = 4.0824
+WARNING:root:l2 inappropriate: loss = 20.8635, l2 = 4.0824
+INFO:root:Epoch    33 [281.8 s]	 train= 5.4925,5.2890 validation= 0.3446,0.3834,0.4594,0.5795 test= 0.3192,0.3575,0.4278,0.5464 [540.6 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 31.5277, l2 = 4.0603
+WARNING:root:l2 inappropriate: loss = 31.5277, l2 = 4.0603
+INFO:root:Epoch    34 [274.3 s]	 train= 5.4342,5.2429 validation= 0.3485,0.3873,0.4648,0.5848 test= 0.3237,0.3623,0.4353,0.5545 [517.7 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 25.0427, l2 = 4.0359
+WARNING:root:l2 inappropriate: loss = 25.0427, l2 = 4.0359
+INFO:root:Epoch    35 [281.3 s]	 train= 5.4299,5.2316 validation= 0.3438,0.3814,0.4596,0.5760 test= 0.3148,0.3525,0.4232,0.5401 [521.8 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 34.4848, l2 = 4.0200
+WARNING:root:l2 inappropriate: loss = 34.4848, l2 = 4.0200
+INFO:root:Epoch    36 [280.9 s]	 train= 5.5787,5.3843 validation= 0.3490,0.3880,0.4660,0.5866 test= 0.3286,0.3671,0.4402,0.5593 [525.8 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 27.0497, l2 = 4.0075
+WARNING:root:l2 inappropriate: loss = 27.0497, l2 = 4.0075
+INFO:root:Epoch    37 [268.1 s]	 train= 5.3253,5.1206 validation= 0.3486,0.3870,0.4654,0.5842 test= 0.3205,0.3579,0.4302,0.5457 [501.4 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 24.7213, l2 = 3.9783
+WARNING:root:l2 inappropriate: loss = 24.7213, l2 = 3.9783
+INFO:root:Epoch    38 [267.8 s]	 train= 5.5443,5.3353 validation= 0.3439,0.3829,0.4594,0.5802 test= 0.3165,0.3549,0.4261,0.5448 [503.4 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 23.0053, l2 = 3.9678
+WARNING:root:l2 inappropriate: loss = 23.0053, l2 = 3.9678
+INFO:root:Epoch    39 [275.4 s]	 train= 5.6491,5.4627 validation= 0.3466,0.3861,0.4635,0.5856 test= 0.3259,0.3641,0.4375,0.5560 [500.1 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 22.8664, l2 = 3.9616
+WARNING:root:l2 inappropriate: loss = 22.8664, l2 = 3.9616
+INFO:root:Epoch    40 [269.7 s]	 train= 5.5801,5.3902 validation= 0.3480,0.3870,0.4640,0.5844 test= 0.3245,0.3630,0.4349,0.5540 [503.6 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 23.4380, l2 = 3.9425
+WARNING:root:l2 inappropriate: loss = 23.4380, l2 = 3.9425
+INFO:root:Epoch    41 [280.6 s]	 train= 5.3153,5.1095 validation= 0.3444,0.3834,0.4600,0.5805 test= 0.3208,0.3584,0.4299,0.5462 [518.4 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 19.3095, l2 = 3.9473
+WARNING:root:l2 inappropriate: loss = 19.3095, l2 = 3.9473
+INFO:root:Epoch    42 [277.5 s]	 train= 5.4948,5.2843 validation= 0.3487,0.3876,0.4664,0.5868 test= 0.3252,0.3630,0.4373,0.5543 [504.7 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 25.5552, l2 = 3.9281
+WARNING:root:l2 inappropriate: loss = 25.5552, l2 = 3.9281
+INFO:root:Epoch    43 [267.8 s]	 train= 5.6759,5.4764 validation= 0.3472,0.3858,0.4639,0.5832 test= 0.3250,0.3629,0.4363,0.5536 [497.6 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 17.5030, l2 = 3.9186
+WARNING:root:l2 inappropriate: loss = 17.5030, l2 = 3.9186
+INFO:root:Epoch    44 [268.6 s]	 train= 5.7300,5.5462 validation= 0.3485,0.3873,0.4662,0.5862 test= 0.3240,0.3622,0.4360,0.5543 [497.4 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 23.3474, l2 = 3.9102
+WARNING:root:l2 inappropriate: loss = 23.3474, l2 = 3.9102
+INFO:root:Epoch    45 [267.9 s]	 train= 5.8813,5.7034 validation= 0.3523,0.3906,0.4691,0.5877 test= 0.3277,0.3651,0.4384,0.5544 [497.7 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 19.2956, l2 = 3.8870
+WARNING:root:l2 inappropriate: loss = 19.2956, l2 = 3.8870
+INFO:root:Epoch    46 [279.8 s]	 train= 5.6899,5.5089 validation= 0.3503,0.3892,0.4661,0.5865 test= 0.3251,0.3632,0.4353,0.5533 [499.4 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 29.7551, l2 = 3.8878
+WARNING:root:l2 inappropriate: loss = 29.7551, l2 = 3.8878
+INFO:root:Epoch    47 [270.7 s]	 train= 5.7457,5.5594 validation= 0.3414,0.3797,0.4567,0.5751 test= 0.3153,0.3532,0.4235,0.5408 [499.1 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 25.3439, l2 = 3.8643
+WARNING:root:l2 inappropriate: loss = 25.3439, l2 = 3.8643
+INFO:root:Epoch    48 [265.8 s]	 train= 5.7816,5.5942 validation= 0.3472,0.3858,0.4634,0.5828 test= 0.3257,0.3638,0.4368,0.5547 [499.2 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 24.6452, l2 = 3.8559
+WARNING:root:l2 inappropriate: loss = 24.6452, l2 = 3.8559
+INFO:root:Epoch    49 [270.1 s]	 train= 5.8136,5.6375 validation= 0.3476,0.3864,0.4627,0.5824 test= 0.3258,0.3638,0.4379,0.5556 [520.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 29.2594, l2 = 3.8490
+WARNING:root:l2 inappropriate: loss = 29.2594, l2 = 3.8490
+INFO:root:Epoch    50 [266.6 s]	 train= 5.5909,5.4185 validation= 0.3530,0.3917,0.4699,0.5896 test= 0.3303,0.3687,0.4413,0.5599 [530.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 22.4519, l2 = 3.8446
+WARNING:root:l2 inappropriate: loss = 22.4519, l2 = 3.8446
+INFO:root:Epoch    51 [267.7 s]	 train= 5.6399,5.4461 validation= 0.3508,0.3895,0.4667,0.5864 test= 0.3281,0.3655,0.4377,0.5533 [519.7 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 22.3921, l2 = 3.8426
+WARNING:root:l2 inappropriate: loss = 22.3921, l2 = 3.8426
+INFO:root:Epoch    52 [268.4 s]	 train= 5.5404,5.3686 validation= 0.3532,0.3916,0.4693,0.5881 test= 0.3303,0.3679,0.4408,0.5569 [526.4 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 25.9143, l2 = 3.8390
+WARNING:root:l2 inappropriate: loss = 25.9143, l2 = 3.8390
+INFO:root:Epoch    53 [281.6 s]	 train= 5.6297,5.4333 validation= 0.3501,0.3880,0.4653,0.5826 test= 0.3258,0.3630,0.4349,0.5501 [525.9 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 14.3543, l2 = 3.8314
+WARNING:root:l2 inappropriate: loss = 14.3543, l2 = 3.8314
+INFO:root:Epoch    54 [267.8 s]	 train= 5.5267,5.3357 validation= 0.3455,0.3844,0.4620,0.5823 test= 0.3198,0.3581,0.4308,0.5492 [524.4 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 22.7299, l2 = 3.8304
+WARNING:root:l2 inappropriate: loss = 22.7299, l2 = 3.8304
+INFO:root:Epoch    55 [267.7 s]	 train= 5.4203,5.2056 validation= 0.3497,0.3880,0.4666,0.5851 test= 0.3227,0.3603,0.4339,0.5502 [516.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 27.0549, l2 = 3.8112
+WARNING:root:l2 inappropriate: loss = 27.0549, l2 = 3.8112
+INFO:root:Epoch    56 [265.9 s]	 train= 5.6260,5.4199 validation= 0.3537,0.3918,0.4716,0.5892 test= 0.3290,0.3666,0.4419,0.5582 [520.0 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 14.4680, l2 = 3.8099
+WARNING:root:l2 inappropriate: loss = 14.4680, l2 = 3.8099
+INFO:root:Epoch    57 [265.2 s]	 train= 5.5891,5.4084 validation= 0.3519,0.3900,0.4685,0.5864 test= 0.3253,0.3629,0.4360,0.5523 [521.6 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 24.8911, l2 = 3.8042
+WARNING:root:l2 inappropriate: loss = 24.8911, l2 = 3.8042
+INFO:root:Epoch    58 [267.7 s]	 train= 5.5546,5.3405 validation= 0.3550,0.3934,0.4728,0.5918 test= 0.3302,0.3679,0.4418,0.5585 [527.8 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 20.6201, l2 = 3.7888
+WARNING:root:l2 inappropriate: loss = 20.6201, l2 = 3.7888
+INFO:root:Epoch    59 [268.0 s]	 train= 5.4510,5.2451 validation= 0.3541,0.3924,0.4710,0.5894 test= 0.3307,0.3676,0.4415,0.5556 [532.9 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 12.9101, l2 = 3.7796
+WARNING:root:l2 inappropriate: loss = 12.9101, l2 = 3.7796
+INFO:root:Epoch    60 [278.4 s]	 train= 5.5930,5.3864 validation= 0.3541,0.3927,0.4710,0.5902 test= 0.3290,0.3668,0.4406,0.5576 [543.5 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 19.2627, l2 = 3.7701
+WARNING:root:l2 inappropriate: loss = 19.2627, l2 = 3.7701
+INFO:root:Epoch    61 [263.4 s]	 train= 5.4333,5.2118 validation= 0.3580,0.3963,0.4756,0.5942 test= 0.3382,0.3759,0.4510,0.5680 [567.9 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 20.9652, l2 = 3.7625
+WARNING:root:l2 inappropriate: loss = 20.9652, l2 = 3.7625
+INFO:root:Epoch    62 [297.4 s]	 train= 5.6513,5.4649 validation= 0.3523,0.3910,0.4693,0.5891 test= 0.3235,0.3612,0.4354,0.5522 [600.2 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 18.2568, l2 = 3.7631
+WARNING:root:l2 inappropriate: loss = 18.2568, l2 = 3.7631
+INFO:root:Epoch    63 [303.6 s]	 train= 5.2900,5.0959 validation= 0.3569,0.3953,0.4746,0.5932 test= 0.3316,0.3697,0.4434,0.5614 [601.3 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 35.1547, l2 = 3.7614
+WARNING:root:l2 inappropriate: loss = 35.1547, l2 = 3.7614
+INFO:root:Epoch    64 [296.7 s]	 train= 5.4361,5.2408 validation= 0.3566,0.3949,0.4735,0.5921 test= 0.3314,0.3691,0.4422,0.5588 [586.6 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 25.3038, l2 = 3.7537
+WARNING:root:l2 inappropriate: loss = 25.3038, l2 = 3.7537
+INFO:root:Epoch    65 [296.9 s]	 train= 5.4908,5.3074 validation= 0.3565,0.3946,0.4732,0.5912 test= 0.3300,0.3675,0.4404,0.5565 [602.0 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 28.4970, l2 = 3.7483
+WARNING:root:l2 inappropriate: loss = 28.4970, l2 = 3.7483
+INFO:root:Epoch    66 [301.5 s]	 train= 5.2841,5.0697 validation= 0.3562,0.3951,0.4748,0.5952 test= 0.3313,0.3694,0.4440,0.5617 [687.7 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 22.3595, l2 = 3.7498
+WARNING:root:l2 inappropriate: loss = 22.3595, l2 = 3.7498
+INFO:root:Epoch    67 [324.4 s]	 train= 5.6008,5.4068 validation= 0.3626,0.4010,0.4823,0.6009 test= 0.3355,0.3735,0.4486,0.5660 [1304.0 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:Save model to ../model/NCR/1__NCR__Electronics01-1-5__2019__optimizer=Adam__lr=0.001__l2=0.0001__dropout=0.2__batch_size=128.pt
+INFO:root:
+
+INFO:root:loss = 23.2782, l2 = 3.7407
+WARNING:root:l2 inappropriate: loss = 23.2782, l2 = 3.7407
+INFO:root:Epoch    68 [380.9 s]	 train= 5.6214,5.4163 validation= 0.3588,0.3970,0.4780,0.5961 test= 0.3370,0.3749,0.4499,0.5671 [1009.1 s] ndcg@5,ndcg@10,hit@5,hit@10
+INFO:root:
+
+INFO:root:loss = 13.9147, l2 = 3.7369
+WARNING:root:l2 inappropriate: loss = 13.9147, l2 = 3.7369

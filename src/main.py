@@ -13,7 +13,8 @@ from data_loaders.DataLoader import DataLoader
 from models.BaseModel import BaseModel
 from models.RecModel import RecModel
 from models.NCR import NCR
-from models.RNNModel import RNNModel
+#from models.RNNModel import RNNModel
+from models.RNNModel import RNNLogic
 from models.CompareModel import CompareModel
 from models.STAMP import STAMP
 from models.SVDPP import SVDPP

@@ -143,10 +143,11 @@ class BaseRunner(object):
         predictions = []
         for batch in tqdm(batches, leave=False, ncols=100, mininterval=1, desc='Predict'):
             # gc.collect()
-            prediction = model.predict(batch)['prediction']
+            prediction = model.predict(batch)['prediction'].cpu()
             predictions.append(prediction.detach())
-
-        predictions = np.concatenate(predictions)
+        #predictions = np.array(predictions)
+        #predictions = torch.from_numpy(predictions)
+        predictions = np.concatenate(predictions)#changed to .cpu()
         sample_ids = np.concatenate([b[global_p.K_SAMPLE_ID] for b in batches])
 
         reorder_dict = dict(zip(sample_ids, predictions))
@@ -306,7 +307,7 @@ class BaseRunner(object):
         """
         if metrics is None:
             metrics = self.metrics
-        predictions = self.predict(model, data, data_processor)
+        predictions = self.predict(model, data, data_processor)#change to .cpu()
         return model.evaluate_method(predictions, data, metrics=metrics)
 
     def check(self, model, out_dict):
